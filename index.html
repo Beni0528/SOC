@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.O.C.</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Uncial+Antiqua&display=swap"
+        rel="stylesheet">
+    <style>
+
+    </style>
+    <!-- Ez a header -->
+</head>
+
+<body>
+    <!-- Ez a body -->
+    <div id="popup">
+        <span id="close">X</span>
+        <div id="szoveg"></div>
+    </div>
+    <div class="grid">
+        <div class="header">
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand">
+                        <h1>Success Of Cinema</h1>
+                    </a>
+                    <input autofocus id="film_nev" class="form-control me-2" list="lista" placeholder="Ide írj..."
+                        aria-label="Search" />
+                    <!-- <button class="btn btn-outline-success"  id="search">Keresés</button> -->
+                    <datalist id="lista">
+
+                    </datalist>
+                    </form>
+                </div>
+            </nav>
+
+        </div>
+        <div class="container">
+            <div id="flex">
+                <div id="filmLista"></div>
+                <!-- <div id="tudnivalok"></div> -->
+            </div>
+            <br>
+            <h1>Creator's picks</h1>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <a href="https://videa.hu/videok/film-animacio/a-hollo-2024-dunjobHlHPOQrfhT" target="_blank"><img src="hollo.webp" style="width:100%"></a>
+                    
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <a href="https://videa.hu/videok/film-animacio/a-sebhelyesarcu-1983-remastered-bdrip-dzZF1sh3hp59g9x7" target="_blank"><img src="scarface.jpg" style="width:100%"></a>
+                    
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <a href="https://videa.hu/videok/film-animacio/jay.and.silent.bob.strike.back.2001-film-animacio-X0vt0uhw665CPgC0" target="_blank"><img src="jay.jpg" style="width:100%"></a>
+                    
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+
+        <div class="footer" style="text-align: center; border: 1px solid black; border-radius: 10px;">
+            Készítette: Szakács Márk, Szép Benedek, Tóth Barnabás Zsolt
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+<!-- Ez a vége -->
