@@ -29,20 +29,19 @@
     </div>
     <div class="grid">
         <div class="header">
-            <nav class="navbar bg-body-tertiary">
-                <div class="container-fluid">
-                    <a class="navbar-brand">
-                        <h1>Success Of Cinema</h1>
-                    </a>
-                    <input autofocus id="film_nev" class="form-control me-2" list="lista" placeholder="Ide írj..."
-                        aria-label="Search" />
-                    <!-- <button class="btn btn-outline-success"  id="search">Keresés</button> -->
-                    <datalist id="lista">
+            <div class="container-fluid">
+                <a class="navbar-brand">
+                <h1>Success Of Cinema</h1>  
+                </a>
+                
+                <input style="border-radius: 15px;" autofocus id="film_nev" class="form-control me-2" list="lista" placeholder="Ide írj..."
+                    aria-label="Search" />
+                <!-- <button class="btn btn-outline-success"  id="search">Keresés</button> -->
+                <datalist id="lista">
 
-                    </datalist>
-                    </form>
-                </div>
-            </nav>
+                </datalist>
+                </form>
+            </div>
 
         </div>
         <div class="container">
@@ -50,8 +49,12 @@
                 <div id="filmLista"></div>
                 <!-- <div id="tudnivalok"></div> -->
             </div>
-            <br>
-            <h1>Creator's picks</h1>
+        </div>
+
+        
+    </div>
+    <div style="margin-top: -100px;">
+        <h1 style="text-align: center;">Creator's picks</h1>
             <div class="slideshow-container">
 
                 <div class="mySlides fade">
@@ -74,21 +77,19 @@
 
                 <a class="prev" onclick="plusSlides(-1)">❮</a>
                 <a class="next" onclick="plusSlides(1)">❯</a>
-
+                
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
             </div>
             <br>
-
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
+            <div class="footer" style="text-align: center; border: 1px solid black; border-radius: 10px;">
+                Készítette: Szakács Márk, Szép Benedek, Tóth Barnabás Zsolt
             </div>
-        </div>
-
-        <div class="footer" style="text-align: center; border: 1px solid black; border-radius: 10px;">
-            Készítette: Szakács Márk, Szép Benedek, Tóth Barnabás Zsolt
-        </div>
     </div>
+           
     <script src="script.js"></script>
 </body>
 

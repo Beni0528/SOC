@@ -13,14 +13,20 @@
     width: 100%;
     margin: auto;
 }
+body{
+    background-image: url(abstrack_backhround_blue__generated.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 h1{
     color: black;
     font-size: 6vw;
-    text-align: center;
+    text-align: left;
     font-family: "Cinzel", serif;
-  font-optical-sizing: auto;
-  font-weight: 900;
-  font-style: bold;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: bold;
+  
 }
 .header{
     grid-area: h;
@@ -56,7 +62,6 @@ button{
     align-content: center;
     justify-content: center;
     flex-wrap: wrap;
-    border: 4px solid black;
     flex-flow: row;
     height: auto;
     width: 100%;
@@ -162,6 +167,8 @@ button{
 }
 .container{
     height: auto;
+    border: 6px solid black;
+    border-radius: 10px;
 }
 .card{
     box-shadow: 10px 10px 5px;
@@ -173,7 +180,7 @@ button{
     background-image: linear-gradient(to bottom, rgb(170,170,170),rgba(255, 255, 255, 0.5));
     top: 0px;
 }
-@media(max-width: 1100px) {
+@media(max-width: 900px) {
     .header {
       margin-bottom: 10vw;
     }
@@ -282,4 +289,7 @@ img {vertical-align: middle; border: 7px solid black ;border-radius: 10px;}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+}
+.bg-body-tertiary{
+    background-color: transparent;
 }

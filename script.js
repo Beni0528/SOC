@@ -750,13 +750,13 @@ let filmek = [
     // }
     if (e.target.id.includes("kep")) {
       console.log(filmek[e.target.id.split("kep")[1]].director);
-      document.getElementById("szoveg").innerHTML = `<label>Synopsis: ${
+      document.getElementById("szoveg").innerHTML = `<label><u>Synopsis:</u> ${
         filmek[e.target.id.split("kep")[1]].synopsis
       }</label><br>
-      <label>Directed by:  ${
+      <label><u>Directed by:</u>  ${
         filmek[e.target.id.split("kep")[1]].director
       }</label><br>
-      <label id="writers">Written by: </label>`;
+      <label id="writers"><u>Written by:</u> </label>`;
       let utolso = 1;
       for (let i of filmek[e.target.id.split("kep")[1]].writers) {
         if (utolso == filmek[e.target.id.split("kep")[1]].writers.length) {
