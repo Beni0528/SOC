@@ -827,3 +827,11 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+window.addEventListener("resize", (e) => {
+  if(window.innerWidth <= 400){
+    document.getElementById("film_nev").placeholder = "🔍"
+  }
+  else{
+    document.getElementById("film_nev").placeholder = "Ide írj...🔍"
+  }
+});
