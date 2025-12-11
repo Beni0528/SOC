@@ -688,9 +688,9 @@ let filmek = [
   }
   document.getElementById(
     "filmLista"
-  ).innerHTML += `<div id="nincs" style="display = none;">
-        <img src="shrug.webp"><br>
-        Sajnos nem találtunk ilyen filmet
+  ).innerHTML += `<div id="nincs" style="display = none; border: none">
+        <img src="yH.gif"><br>
+        Sajnos nem találtunk ilyen filmet.
         </div>`;
   let labelId = "writer_";
   counter = 0;
@@ -827,11 +827,27 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
-window.addEventListener("resize", (e) => {
-  if(window.innerWidth <= 400){
-    document.getElementById("film_nev").placeholder = "🔍"
+// window.addEventListener("resize", (e) => {
+//   if(window.innerWidth <= 400){
+//     document.getElementById("film_nev").placeholder = "🔍"
+//   }
+//   else{
+//     document.getElementById("film_nev").placeholder = "Keresés..."
+//   }
+// });
+
+var i = 0;
+var txt = filmek[Math.floor(Math.random() * filmek.length)].title;
+var speed = 50;
+
+document.body.onload = () => {
+  function typeWriter() {
+    if (i < txt.length) {
+      console.log(txt[i]); 
+      document.getElementById("film_nev").placeholder += txt[i];
+      i++;
+      setTimeout(typeWriter, speed);
+    }
   }
-  else{
-    document.getElementById("film_nev").placeholder = "Ide írj...🔍"
-  }
-});
+  typeWriter();
+}

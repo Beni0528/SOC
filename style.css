@@ -93,8 +93,9 @@ button{
     display: none;
 }
 #nincs > img{
-    width: 30%;
-    height: 60%;
+    width: 50%;
+    height: 90%;
+    border: none;
 }    
 #popup{
     position: absolute;
